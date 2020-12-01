@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    background: linear-gradient(110deg, #7bf 50%, orange 50%) center center / 100% 100%;
+
+  }
+
+  .banner .container {
+    background: url(banner.png) 25% 0%/50% 100%;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+
+  }
+
+  .banner .banner-txt {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-3deg);
+    color: white;
+    text-shadow: 3px 3px black;
+  }
+
+  .banner .banner-txt h1 {
+    font-size: 100px;
+  }
+
+  .banner .banner-txt h2 {
+    padding-top: 30px;
+    font-size: 60px;
+  }
+
+  .banner .banner-txt p {
+    padding-top: 30px;
+    font-size: 40px;
+  }
+
+  .banner .navbar {
+    color: white;
+    display: flex;
+    /* background-color: #61a0f8; */
+    padding: 20px;
+
+
+  }
+
+  .banner .item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    flex: 1;
+    /* background-color: #f08bc3; */
+    margin: 5px;
+    text-align: center;
+  }
+
+  .banner .item2 {
+    padding-left: 60px;
+    font-size: 24px;
+    flex-grow: 3;
+    text-align: justify;
+
+    flex-basis: 0%;
+  }
+
+
+
+  .sec2 .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: white;
+  }
+
+  .sec2 .txt {
+
+    width: 50%;
+  }
+
+  .sec2 .img {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+
+  }
+
+  .sec2 .txt p {
+    margin-top: 30px;
+    line-height: 30px;
+    padding-right: 10px;
+  }
+
+
+  .sec2 .img p {
+    margin: 0px;
+    width: 80%;
+    flex: none;
+    text-align: right;
+  }
+
+  .sec2 .img img {
+    height: 100%;
+    width: 80%
+  }
+
+
+
+
+
+
+
+  .sec3 .container {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    height: 500px;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .sec3 .container1 {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .sec3 .container1 h1 {
+    padding: 5px;
+  }
+
+  .sec3 .container1 h3 {
+    padding-top: 10px;
+  }
+
+  .sec3 .container2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sec3 .content {
+    width: 18%;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .sec3 .content h1 {
+    background-color: white;
+  }
+
+  .sec3 .content p {
+    text-align: left;
+    padding: 15px;
+  }
+
+
+
+
+
+
+
+
+
+  .body {
+    width: 100vw;
+
+  }
+
+  .body .case {
+    width: 100vw;
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+
+  }
+
+  .body .container {
+    border: orange solid 1px;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+
+  }
+
+  .body .container small {
+    display: block;
+  }
+
+  .body .top {
+    margin: 20px;
+  }
+
+  .body .txt {
+    /* border: orange solid 1px; */
+    /* width: 50%; */
+    /* margin: auto; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .body .txt1 {
+    width: 40%;
+    /* flex-wrap: wrap; */
+    /* padding: 10px; */
+    margin: 20px 0px;
+  }
+
+  .body .containfoot {
+    display: flex;
+    justify-content: center;
+  }
+
+  .body .footer {
+    background-color: mediumturquoise;
+    width: 60%;
+    margin: 20px;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .title {
+    background-color: #ccc;
+  }
+
+  .title .container2 {
+    height: 100%;
+    display: flex;
+
+
+    flex-direction: column;
+
+    margin: 0px 100px;
+
+  }
+
+  .title .h1 {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: burlywood;
+
+  }
+
+  .title .h2 {
+    padding: 20px;
+
+
+  }
+
+  .title .h2 small {
+    font-weight: 400;
+    font-size: 16px;
+
+  }
+</style>
+
+<body>
+  <div class="banner">
+    <div class="container">
+      <div class="navbar">
+
+        <a href="#" class="item item2">易安網</a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item">加入會員</a>
+        <a href="#" class="item">會員登入</a>
+        <a href="#"></a>
+      </div>
+      <div class="banner-txt">
+        <h1>
+          你也熱愛騎單車？
+        </h1>
+        <h2>-鐵馬族的專屬保險-</h2>
+        <p>自行車責任 | 失竊車損 | 意外身故失能</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="sec2">
+    <div class="container">
+      <div class="txt">
+        <h1>騎腳踏車違規 害重機騎士身亡 判賠130萬</h1>
+        <p>高雄市李姓婦人騎腳踏車未依規定行駛，遭何姓機車騎士從後方追撞，騎士當場死亡。橋頭地院依過失致死罪，判處徒刑7月，後來以130萬元達成和解</p>
+      </div>
+      <div class="img">
+        <img src="/news.png" alt="">
+        <p>(示意圖取自網路)</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="sec3">
+    <div class="container">
+      <div class="container1">
+        <h1>不只是意外險，還是"單車險"</h1>
+        <h3>開車有汽車保險，騎單車也該有單車保險</h3>
+      </div>
+      <div class="container2">
+        <div class="content">
+          <img src="/icon_theft.png" alt="">
+          <h1>自行車責任</h1>
+          <p>如汽機車強制險班，理賠事故造成對方的損失</p>
+        </div>
+        <div class="content">
+          <img src="/icon_bike.png" alt="">
+          <h1>失竊車損</h1>
+          <p>理論因竊盜、搶奪、強盜、碰撞造成的運動器材損失</p>
+        </div>
+        <div class="content">
+          <img src="/icon_disable.png" alt="">
+          <h1>意外身故失能</h1>
+          <p>理賠被保險人意外身故或失能</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; padding:35px 0px ;">
+    <h1 style="padding: 10px;">選擇你的保險方案</h1>
+    <h2>立即保障你的鐵馬旅行</h2>
+  </div>
+  <div class="body">
+    <div class="case">
+      <div class="container">
+        <div class="top">
+          <h1>推薦方案
+            <small>約 NT $ 1410/年</small>
+          </h1>
+        </div>
+        <div class="txt">
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+
+        </div>
+        <div class="containfoot">
+          <div class="footer">
+            <h2>選擇此方案</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="top">
+          <h1>推薦方案
+            <small>約 NT $ 1410/年</small>
+          </h1>
+        </div>
+        <div class="txt">
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+
+        </div>
+        <div class="containfoot">
+          <div class="footer">
+            <h2>選擇此方案</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="top">
+          <h1>推薦方案
+            <small>約 NT $ 1410/年</small>
+          </h1>
+        </div>
+        <div class="txt">
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+          <div class="txt1">
+            <h3>
+              意外身故失能<small>200萬</small>
+            </h3>
+          </div>
+
+        </div>
+        <div class="containfoot">
+          <div class="footer">
+            <h2>選擇此方案</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="title">
+    <div class="container2">
+      <div class="h1">
+        <h1>常見問題</h1>
+      </div>
+      <div class="h2">
+        <h1>Ｑ：如何申請理賠？</h1>
+        <h1>Ａ：<small>來店客服通知我們，並填寫理賠申請書並備妥相關文件</small></h1>
+
+      </div>
+      <div class="h2">
+        <h1>Ｑ：有保障自行車競賽、馬拉松嗎？</h1>
+        <h1>Ａ：<small>若主辦單位將活動列為競賽，僅保障責任險及運動器材損失，不保障意外身故及失能</small></h1>
+
+      </div>
+      <div class="h2">
+        <h1>Ｑ：自行車車損的定義是甚麼？</h1>
+        <h1>Ａ：<small>凡是發生竊盜、搶奪、強盜、碰撞造成的自行車損壞或減失，即可申請理賠</small></h1>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
